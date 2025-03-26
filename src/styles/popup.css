@@ -1,0 +1,98 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-box {
+    background: white;
+    padding-top: 93px;
+    border-radius: 20px;
+    text-align: center;
+    width: 677px;
+    height: 321px;
+
+    p {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 53px;
+
+    }
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-danger {
+    width: 140px;
+    height: 50px;
+    background: #EF3826;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    width: 140px;
+    height: 50px;
+    background: #4880FF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .popup-box {
+        width: 90%;
+        height: auto;
+        padding-top: 60px;
+    }
+
+    .popup-box p {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .btn-danger,
+    .btn-primary {
+        width: 120px;
+        height: 45px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .popup-box {
+        width: 95%;
+        padding-top: 40px;
+        border-radius: 15px;
+    }
+
+    .popup-box p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .popup-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-danger,
+    .btn-primary {
+        width: 100%;
+        height: 40px;
+    }
+}

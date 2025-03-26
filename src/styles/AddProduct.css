@@ -1,0 +1,143 @@
+.create-container {
+    padding: 20px 32px;
+}
+
+.title {
+
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+}
+
+.create-form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    color: #202224;
+    text-align: left;
+}
+
+
+
+.form-group label {
+    font-weight: 600;
+    color: #202224;
+
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #D8D8D8;
+    background-color: #F1F4F9;
+    border-radius: 6px;
+    box-sizing: border-box;
+
+}
+
+.preview-img {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+}
+
+.save-btn {
+    width: 124PX;
+    height: 34px;
+    background-color: #4880FF;
+    color: #FFFFFF;
+    border: 1PX solid #4880FF;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+.layout {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 41px;
+
+}
+
+
+.left-side {
+    width: 60%;
+}
+
+.image-container {
+    width: 35%;
+}
+
+.profile-image-input {
+    width: 475px;
+    height: 218px;
+}
+
+.upload-box {
+    width: 200px;
+    height: 200px;
+    border: 2px dashed #d1d1d1;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: gray;
+}
+
+
+.upload-icon {
+    margin-top: 35px;
+    width: 123.28px;
+    height: 112.65px;
+    object-fit: cover;
+}
+
+
+
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .left-side,
+    .image-container {
+        width: 100%;
+    }
+
+    .image-container {
+        margin-top: 20px;
+
+    }
+
+    .profile-image-input {
+        width: 100%;
+        height: 150px;
+    }
+
+    .upload-box {
+        height: 150px;
+    }
+
+    .save-btn {
+        width: 100%;
+    }
+
+    .form-group input {
+        padding: 14px;
+    }
+}

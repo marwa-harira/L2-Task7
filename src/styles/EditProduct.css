@@ -1,0 +1,139 @@
+.edit-container {
+    padding: 36px 32px 0 32px;
+
+}
+
+.title {
+    text-align: left;
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 93px;
+}
+
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 60%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #202224;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #D8D8D8;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.save-btn {
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: #4880FF;
+    color: #FFFFFF;
+    border: 1PX solid #4880FF;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.image-container {
+    width: 475px;
+    height: 218px;
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.centered-img {
+    width: 164.42px;
+    height: 171px;
+    object-fit: cover;
+}
+
+
+.image-label {
+    font-weight: bold;
+}
+
+.image-input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.preview-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+
+
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .left-side,
+    .image-container {
+        width: 100%;
+    }
+
+    .image-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .save-btn {
+        width: 100%;
+    }
+
+    .profile-image-input {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .form-group input {
+        padding: 14px;
+    }
+
+    .centered-img {
+        width: 130px;
+        height: 130px;
+    }
+}

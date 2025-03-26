@@ -1,0 +1,108 @@
+.sidebar {
+    width: 230px;
+    background-color: #FFFFFF;
+    color: #ffffff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 28px;
+
+}
+
+.logo {
+    font-size: 20px;
+    color: #4880FF;
+    text-align: center;
+    font-weight: 800;
+
+
+}
+
+.logo span {
+    color: #000000;
+}
+
+ul {
+    margin-top: 50px;
+    list-style-type: none;
+    padding: 0;
+    padding: 0 22.9px;
+}
+
+ul li {
+
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    cursor: pointer;
+    color: #202224;
+    gap: 15.27px;
+}
+
+ul:last-child {
+    margin-top: auto;
+    margin-bottom: 62px;
+}
+
+ul li.active {
+
+    width: 183.2px;
+    height: 40px;
+    border: 1px solid #4880FF;
+    border-radius: 6px;
+    background-color: #4880FF;
+    color: #FFFFFF;
+    gap: 9.43px;
+}
+
+.edit-btn:hover {
+    background-color: #E9F0FF;
+    border-radius: 8px;
+}
+
+.delete-btn:hover {
+    background-color: #FFE9E9;
+    border-radius: 8px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 0;
+        position: absolute;
+        transition: 0.3s;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .sidebar.open {
+        width: 250px;
+    }
+
+    .sidebar ul li {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .logo span {
+        font-size: 14px;
+    }
+
+    .sidebar ul {
+        display: none;
+    }
+
+    .sidebar.open ul {
+        display: block;
+    }
+}

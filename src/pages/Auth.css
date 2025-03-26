@@ -1,0 +1,26 @@
+.auth {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #176e6e;
+}
+
+.auth form {
+    width: 50%;
+    min-height: 50%;
+    text-align: center;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: white;
+
+}
+
+.auth form input,
+.auth form a {
+    display: inline-block;
+    width: 70%;
+    height: 30px;
+    margin-left: 16px;
+    margin-top: 16px;
+}

@@ -1,0 +1,170 @@
+body {
+    background-color: #f4f4f4;
+}
+
+.products-container {
+    background: #F5F6FA;
+    padding: 36PX 32px;
+}
+
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+        font-size: 28px;
+        font-weight: 700;
+    }
+}
+
+.add-product-button {
+    background-color: #4880FF;
+    color: #FFFFFF;
+    border: 1px solid #4880FF;
+    padding: 7px 19.5px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.product-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    border-spacing: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-left: 2px solid #D5D5D5;
+    border-right: 2px solid #D5D5D5;
+}
+
+.product-table th {
+    font-weight: 700;
+
+}
+
+.product-table td {
+    font-weight: 600;
+}
+
+.product-table thead {
+    border: 1px solid #D5D5D5;
+
+}
+
+.product-table tr {
+    border-bottom: 1px solid #D5D5D5;
+}
+
+.product-table tr:last-child {
+    border-bottom: 1px solid #D5D5D5;
+}
+
+.product-table th,
+.product-table td {
+    color: #202224;
+    padding: 10px;
+    text-align: center;
+}
+
+.action-icons {
+    width: 90.28PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid #D5D5D5;
+    border-radius: 8px;
+    margin: 0 auto;
+    transform: translateX(10px);
+
+}
+
+.divider {
+
+    width: 1px;
+    height: 20px;
+    background-color: #ccc;
+}
+
+.product-image {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.edit-btn,
+.delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+
+
+}
+
+.edit-btn {
+    color: #007bff;
+}
+
+.delete-btn {
+    color: #ff4d4d;
+}
+
+
+
+@media (max-width: 768px) {
+    .product-table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .product-table thead {
+        display: none;
+    }
+
+    .product-table tbody,
+    .product-table tr,
+    .product-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .product-table tr {
+        margin-bottom: 15px;
+        border: 1px solid #D5D5D5;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .product-table td {
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    .product-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        color: #555;
+    }
+
+    .product-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .action-icons {
+        justify-content: flex-start;
+    }
+}
