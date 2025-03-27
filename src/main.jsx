@@ -1,7 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Auth from './pages/Auth.jsx';
 import Login from './pages/Login.jsx';
 import Register from './pages/Register.jsx';
@@ -10,7 +10,7 @@ import Items from './pages/Items.jsx';
 import AddProduct from './pages/AddProduct.jsx';
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Auth />,
