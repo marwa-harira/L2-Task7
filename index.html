@@ -6,8 +6,12 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-
   <title>Dashboard</title>
+  <script>
+    if (window.location.pathname.startsWith('/L2-Task7/') && !window.location.pathname.endsWith('/')) {
+      window.location.replace('/L2-Task7/' + window.location.hash.substring(1));
+    }
+  </script>
   <script type="module" crossorigin src="/L2-Task7/assets/index-fNNqAv0e.js"></script>
   <link rel="stylesheet" crossorigin href="/L2-Task7/assets/index-BaLkjPj8.css">
 </head>
