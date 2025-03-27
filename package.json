@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://marwa-harira.github.io/L2-Task7",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

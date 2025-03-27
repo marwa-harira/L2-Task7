@@ -27,13 +27,13 @@ const Sidebar = () => {
                 <h2 className="logo">Dash<span>Stack</span></h2>
                 <ul>
                     <li>
-                        <img src="/assets/img/Dashboard.svg" alt="Dashboard-icon" />
+                        <img src={import.meta.env.BASE_URL + "/assets/img/Dashboard.svg"} alt="Dashboard-icon" />
                         Dashboard
                     </li>
 
 
                     <li className="active">
-                        <img src="/assets/img/Products.svg" alt="Products-icon" />
+                        <img src={import.meta.env.BASE_URL + "/assets/img/Products.svg"} alt="Products-icon" />
                         Products
                     </li>
 
@@ -41,7 +41,7 @@ const Sidebar = () => {
                 </ul>
                 <ul>
                     <li>
-                        <img src="../../public/assets/img/logout.svg" alt="logout-icon" />
+                        <img src={import.meta.env.BASE_URL + "/assets/img/logout.svg"} alt="logout-icon" />
                         <a onClick={logout}>logout</a>
                     </li>
                 </ul>

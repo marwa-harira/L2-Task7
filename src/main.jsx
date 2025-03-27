@@ -1,7 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
-import { createHashRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Auth from './pages/Auth.jsx';
 import Login from './pages/Login.jsx';
 import Register from './pages/Register.jsx';
@@ -10,7 +10,7 @@ import Items from './pages/Items.jsx';
 import AddProduct from './pages/AddProduct.jsx';
 
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <Auth />,
@@ -37,7 +37,7 @@ const router = createHashRouter([
       }
     ]
   }
-]);
+], { basename: "/L2-Task7" });
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} fallbackElement={<div>Page Not Found</div>} />

@@ -21,7 +21,7 @@ const Header = () => {
             <div className="header">
                 <h2 className="header-title">{getTitle()}</h2>
                 <div className="header-right">
-                    <img src="../../public/assets/img/profile.png" alt="Admin" className="profile-pic" />
+                    <img src={import.meta.env.BASE_URL + "/assets/img/profile.png"} alt="Admin" className="profile-pic" />
                     <div className="admin-info">
                         <h4>Moni Roy</h4>
                         <p>Admin</p>

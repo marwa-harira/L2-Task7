@@ -142,8 +142,9 @@ const Register = () => {
                                 onChange={(e) => setProfileImage(e.target.files[0])}
                             />
                             <div className="profile-image-icon">
+
                                 <img
-                                    src="public/assets/img/Upload icon.png"
+                                    src={import.meta.env.BASE_URL + "/assets/img/Upload icon.png"}
                                     alt="Upload Icon"
                                     className="upload-icon"
                                 />

@@ -12,15 +12,16 @@ const Items = () => {
 
 
     const [products, setProducts] = useState([
-        { id: 1, name: "Apple Watch Series 4", price: "$690.00", image: "/assets/img/Image-product.png" },
-        { id: 2, name: "Apple Watch Series 4", price: "$690.00", image: "/assets/img/Image-product.png" },
-        { id: 3, name: "Apple Watch Series 4", price: "$690.00", image: "/assets/img/Image-product.png" },
-        { id: 4, name: "Apple Watch Series 4", price: "$690.00", image: "/assets/img/Image-product.png" },
-        { id: 5, name: "Apple Watch Series 4", price: "$690.00", image: "/assets/img/Image-product.png" },
-        { id: 6, name: "Apple Watch Series 4", price: "$690.00", image: "/assets/img/Image-product.png" },
-        { id: 7, name: "Apple Watch Series 4", price: "$690.00", image: "/assets/img/Image-product.png" },
-        { id: 8, name: "Apple Watch Series 4", price: "$690.00", image: "/assets/img/Image-product.png" },
+        { id: 1, name: "Apple Watch Series 4", price: "$690.00", image: import.meta.env.BASE_URL + "/assets/img/Image-product.png" },
+        { id: 2, name: "Apple Watch Series 4", price: "$690.00", image: import.meta.env.BASE_URL + "/assets/img/Image-product.png" },
+        { id: 3, name: "Apple Watch Series 4", price: "$690.00", image: import.meta.env.BASE_URL + "/assets/img/Image-product.png" },
+        { id: 4, name: "Apple Watch Series 4", price: "$690.00", image: import.meta.env.BASE_URL + "/assets/img/Image-product.png" },
+        { id: 5, name: "Apple Watch Series 4", price: "$690.00", image: import.meta.env.BASE_URL + "/assets/img/Image-product.png" },
+        { id: 6, name: "Apple Watch Series 4", price: "$690.00", image: import.meta.env.BASE_URL + "/assets/img/Image-product.png" },
+        { id: 7, name: "Apple Watch Series 4", price: "$690.00", image: import.meta.env.BASE_URL + "/assets/img/Image-product.png" },
+        { id: 8, name: "Apple Watch Series 4", price: "$690.00", image: import.meta.env.BASE_URL + "/assets/img/Image-product.png" },
     ]);
+
 
 
 
@@ -61,7 +62,7 @@ const Items = () => {
                     <div className="products-header">
                         <h2>Manage Products</h2>
                         <button className="add-product-button" onClick={() => navigate("/item/create")}>
-                            <img src="../../public/assets/img/plus.svg" alt="plus-icon" /> Add Product
+                            <img src={import.meta.env.BASE_URL + "/assets/img/plus.svg"} alt="plus-icon" /> Add Product
                         </button>
                     </div>
 
@@ -88,11 +89,11 @@ const Items = () => {
                                     <td>
                                         <div className="action-icons">
                                             <button className="edit-btn" onClick={() => handleEditClick(product.id)}>
-                                                <img src="../../public/assets/img/pencil-write.svg" alt="edit-icon" />
+                                                <img src={import.meta.env.BASE_URL + "/assets/img/pencil-write.svg"} alt="edit-icon" />
                                             </button>
                                             <div className="divider"></div>
                                             <button className="delete-btn" onClick={() => handleDeleteClick(product.id)}>
-                                                <img src="../../public/assets/img/bin.svg" alt="delete-icon" />
+                                                <img src={import.meta.env.BASE_URL + "/assets/img/bin.svg"} alt="delete-icon" />
                                             </button>
                                         </div>
                                     </td>

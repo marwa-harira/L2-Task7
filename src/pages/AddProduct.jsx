@@ -79,7 +79,7 @@ const AddProduct = () => {
 
                                 <div className="centered-img">
                                     <img
-                                        src="/assets/img/Upload icon.png"
+                                        src={import.meta.env.BASE_URL + "/assets/img/Upload icon.png"}
                                         alt="Upload Icon"
                                         className="upload-icon"
                                     />

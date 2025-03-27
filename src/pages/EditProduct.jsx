@@ -99,7 +99,7 @@ function EditProduct() {
 
                                 <div className="centered-img">
                                     <img
-                                        src="/assets/img/Image-product.png"
+                                        src={import.meta.env.BASE_URL + "/assets/img/Image-product.png"}
                                         alt="Upload Icon"
                                         className="upload-icon"
                                     />
